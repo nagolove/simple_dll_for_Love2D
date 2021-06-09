@@ -36,7 +36,10 @@ static const struct luaL_reg love_methods [] =
 
 extern "C"
 {
-__declspec(dllexport) int luaopen_lovelib(lua_State *L)
+#ifdef WINDOZE
+__declspec(dllexport) 
+#endif
+int luaopen_lovelib(lua_State *L)
 {
 	luaL_openlib (L, "lovelib", love_methods, 0);
 	return 1;
