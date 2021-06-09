@@ -1,3 +1,7 @@
+print('package.cpath', package.cpath)
+print('love.filesystem.getCRequirePath()', love.filesystem.getCRequirePath())
+--package.cpath = package.cpath .. ";?.dll"
+--package.cpath = package.cpath .. ";?.dll"
 
 
 function love.load()

@@ -1,4 +1,7 @@
 
+print("package.cpath", package.cpath)
+package.cpath = package.cpath .. ";?.dll"
+print("package.cpath", package.cpath)
 
 lib=require("lovelib")
 
